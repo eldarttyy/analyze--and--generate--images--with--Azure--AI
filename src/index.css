@@ -1,0 +1,52 @@
+/* Set a gradient background for the entire page */
+body {
+    background: linear-gradient(to bottom, #3E1F78, #000000); /* Purple to black gradient */
+    color: white; /* Change text color to white for contrast */
+    font-family: Arial, sans-serif; /* Set a default font */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height for centering */
+    margin: 0; /* Remove default margin */
+}
+
+/* Styling for the input field */
+input[type="file"] {
+    padding: 10px;
+    border: 2px solid #6A5ACD; /* Light purple border */
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
+    color: white; /* White text color */
+    transition: border-color 0.3s, box-shadow 0.3s;
+    width: 250px; /* Set a specific width for the input */
+}
+
+input[type="file"]:hover {
+    border-color: #8A2BE2; /* Brighter purple on hover */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* Shadow effect */
+}
+
+/* Styling for buttons */
+button {
+    background-color: #8A2BE2; /* Purple background */
+    color: white;
+    padding: 12px 24px; /* Increased padding for better appearance */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    margin: 10px; /* Increased margin for spacing */
+    width: 150px; /* Set a specific width for the buttons */
+}
+
+button:hover {
+    background-color: #6A5ACD; /* Lighter purple on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+button:active {
+    background-color: #4B0082; /* Darker purple when clicked */
+    transform: translateY(0); /* Reset position */
+}
