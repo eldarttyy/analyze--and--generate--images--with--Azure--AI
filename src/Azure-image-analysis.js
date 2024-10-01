@@ -1,8 +1,8 @@
 import axios from "axios";
 
 async function analyzeImage(imageUrl) {
-    const endpoint = "https://elearn.cognitiveservices.azure.com/";
-    const apiKey = "a6a981c72a9544448ec8e445bc42633e"; // Insert your Azure API key here
+    const endpoint = AZURE_OPENAI_ENDPOINT_A;
+    const apiKey = AZURE_OPENAI_API_KEY_A; // Insert your Azure API key here
     const url = `${endpoint}vision/v3.2/analyze`; // Assuming you're using Azure Computer Vision API
 
 

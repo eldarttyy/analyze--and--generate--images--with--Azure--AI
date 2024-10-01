@@ -1,8 +1,8 @@
 import axios from "axios";
 
 async function generateImage(prompt) {
-    const apiBase = "https://azuregenerate.openai.azure.com/";
-    const apiKey = "67646e4d85524a8ca4162564618c88e0";
+    const apiBase = AZURE_OPENAI_API_ENDPOINT_G;
+    const apiKey = AZURE_OPENAI_API_KEY_G;
     const apiVersion = "2024-05-01-preview";
     const url = `${apiBase}openai/images/generations:submit?api-version=${apiVersion}`;
     const headers = {
